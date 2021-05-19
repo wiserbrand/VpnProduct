@@ -115,22 +115,6 @@ class VpnProductRepository implements VpnProductRepositoryInterface
         return $searchResults;
     }
 
-//    /**
-//     * {@inheritdoc}
-//     */
-//    public function delete(VpnProductInterface $vpnProduct): bool
-//    {
-//        try {
-//            $vpnProductModel = $this->vpnProductFactory->create();
-//            $this->resource->load($vpnProductModel, $vpnProduct->getEntityId());
-//            $this->resource->delete($vpnProductModel);
-//        } catch (\Exception $exception) {
-//            throw new CouldNotDeleteException(__('Could not delete the VpnProduct'), $exception);
-//        }
-//
-//        return true;
-//    }
-
     /**
      * {@inheritdoc}
      */
