@@ -1,7 +1,6 @@
 {
-    "wiserbrand_vpnvroduct": {
+    "wiserbrand_vpnproduct": {
         "column": {
-            "entity_id": true,
             "product_id": true,
             "copywrite_info": true,
             "vpn": true,

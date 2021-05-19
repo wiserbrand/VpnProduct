@@ -20,6 +20,6 @@ class VpnProduct extends AbstractDb
      */
     protected function _construct()
     {
-        $this->_init('Wiserbrand_VpnProduct', 'product_id');
+        $this->_init('wiserbrand_vpnproduct', 'product_id');
     }
 }

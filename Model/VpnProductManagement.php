@@ -49,7 +49,7 @@ class VpnProductManagement implements VpnProductManagementInterface
         SearchCriteriaBuilder $criteriaBuilder,
         FilterBuilder $filterBuilder,
         VpnProductRepositoryInterface $vpnProductRepository,
-        PublisherInterface $publisher,
+        PublisherInterface $publisher
     ) {
         $this->criteriaBuilder = $criteriaBuilder;
         $this->filterBuilder = $filterBuilder;
