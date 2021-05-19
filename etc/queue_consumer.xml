@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
+    <consumer name="wiserbrandVpnProductUpdateConsumer"
+              queue="wiserbrand.vpnproduct.update.queue"
+              connection="amqp"
+              consumerInstance="Magento\Framework\MessageQueue\Consumer"
+              handler="Wiserbrand\VpnProduct\Api\MessageQueue\HandlerInterface::processMessage"
+              maxMessages="1"/>
+</config>

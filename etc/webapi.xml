@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route url="/V1/product/update" method="PUT">
+		<service class="Wiserbrand\VpnProduct\Api\VpnProductManagementInterface" method="updateProduct"/>
+		<resources>
+<!--        for simply testing I used anonymous resource-->
+            <resource ref="anonymous"/>
+<!--			<resource ref="Wiserbrand_VpnProduct::VpnProduct_save"/>-->
+		</resources>
+	</route>
+	<route url="/V1/product/getByVpn/:vpn" method="GET">
+		<service class="Wiserbrand\VpnProduct\Api\VpnProductManagementInterface" method="getProductsByVpn"/>
+		<resources>
+<!--        for simply testing I used anonymous resource-->
+            <resource ref="anonymous"/>
+<!--			<resource ref="Wiserbrand_VpnProduct::VpnProduct_view"/>-->
+		</resources>
+	</route>
+</routes>

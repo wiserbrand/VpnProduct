@@ -1,0 +1,24 @@
+{
+    "name": "wiserbrand/module-custom-catalog",
+    "version": "1.0.0",
+    "description": "VpnProduct",
+    "type": "magento2-module",
+    "minimum-stability": "stable",
+    "require": {
+        "magento/module-amqp": "100.4.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Wiserbrand\\VpnProduct\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/wiserbrand/custom-catalog.git"
+        }
+    ]
+}

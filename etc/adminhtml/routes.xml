@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="vpn_product" frontName="vpn_product">
+            <module name="Wiserbrand_VpnProduct" before="Magento_Catalog" />
+        </route>
+    </router>
+</config>

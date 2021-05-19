@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Wiserbrand\VpnProduct\Api\VpnProductManagementInterface" type="Wiserbrand\VpnProduct\Model\VpnProductManagement"/>
+	<preference for="Wiserbrand\VpnProduct\Api\VpnProductRepositoryInterface" type="Wiserbrand\VpnProduct\Model\VpnProductRepository"/>
+	<preference for="Wiserbrand\VpnProduct\Api\Data\VpnProductInterface" type="Wiserbrand\VpnProduct\Model\VpnProduct"/>
+	<preference for="Wiserbrand\VpnProduct\Api\Data\VpnProductSearchResultsInterface" type="Wiserbrand\VpnProduct\Model\Data\VpmProductSearchResults"/>
+	<preference for="Wiserbrand\VpnProduct\Api\UpdateManagementInterface" type="Wiserbrand\VpnProduct\Model\Import\UpdateManagement"/>
+
+    <preference for="Wiserbrand\VpnProduct\Api\MessageQueue\HandlerInterface" type="Wiserbrand\VpnProduct\MessageQueue\Handler" />
+    <preference for="Wiserbrand\VpnProduct\Api\MessageQueue\MessageInterface" type="Wiserbrand\VpnProduct\MessageQueue\Message" />
+    <preference for="Wiserbrand\VpnProduct\Api\MessageQueue\PublisherInterface" type="Wiserbrand\VpnProduct\MessageQueue\Publisher" />
+
+    <virtualType name="VpnProductGridCollection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">wiserbrand_vpnproduct</argument>
+            <argument name="resourceModel" xsi:type="string">Wiserbrand\VpnProduct\Model\ResourceModel\VpnProduct</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="vpnproduct_listing_data_source" xsi:type="string">VpnProductGridCollection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

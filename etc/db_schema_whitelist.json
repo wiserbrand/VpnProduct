@@ -1,0 +1,14 @@
+{
+    "wiserbrand_vpnvroduct": {
+        "column": {
+            "entity_id": true,
+            "product_id": true,
+            "copywrite_info": true,
+            "vpn": true,
+            "sku": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

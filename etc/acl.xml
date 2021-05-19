@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="Wiserbrand_VpnProduct::VpnProduct" title="VpnProduct" sortOrder="10">
+					<resource id="Wiserbrand_VpnProduct::VpnProduct_save" title="Save VpnProduct" sortOrder="10"/>
+					<resource id="Wiserbrand_VpnProduct::VpnProduct_delete" title="Delete VpnProduct" sortOrder="20"/>
+					<resource id="Wiserbrand_VpnProduct::VpnProduct_update" title="Update VpnProduct" sortOrder="30"/>
+					<resource id="Wiserbrand_VpnProduct::VpnProduct_view" title="View VpnProduct" sortOrder="40"/>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>
